@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddy</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+  .active{
+    background-color:#0E7A81 ;
+    color: white;
+    border-radius:40% ;
+  }
+</style>
+</head>
+<body>
+    <header class="">
+        <nav class=" w-11/12 mx-auto flex justify-between items-center p-4 ">
+            <div class="flex justifi-center gap-1">
+                <img src="./images/logo.webp" alt="">
+                <h1 class="font-bold text-xl text-[#0E7A81]">Paddy</h1>
+            </div>
+            <div class="flex gap-2">
+                <button class="btn">Home</button>
+                <button class="btn">Shope</button>
+                <button class="btn">Contact</button>
+            </div>
+            <!--  -->
+            <div>
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+                        <span class="badge badge-sm indicator-item">8</span>
+                      </div>
+                    </div>
+                    <div
+                      tabindex="0"
+                      class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                      <div class="card-body">
+                        <span class="text-lg font-bold">8 Items</span>
+                        <span class="text-info">Subtotal: $999</span>
+                        <div class="card-actions">
+                          <button class="btn btn-primary btn-block">View cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="w-11/12 mx-auto flex justifi-center items-center  text-center">
+    <div class="w-11/12 mx-auto ">
+        <p class="text-gray-400 pb-2">Bringing Families Together ❤️‍🔥 </p>
+    <h3 class=" text-3xl font-extrabold">Your Path to Adoption <br> Starts Here</h3>
+    <p class="text-gray-400 text-sm pb-2">It is a long established fact that a reader will be distracted by the <br> readable content of a  page when looking at its layout. The point <br> of using Lorem Ipsum is that it has a.</p>
+    <button class="btn text-white bg-[#0E7A81] text-center">View More</button>
+    <img class="px-10" src="./images/pet.webp" alt="">
+    </div>
+        </section>
+        <!-- dispaly button -->
+         <section>
+            <nav id="button-container" class=" flex justify-center items-center gap-5">
+            </nav>
+         </section>
+         <!-- show all paddy -->
+          <section class="w-11/12 mx-auto mt-5">
+            <div class="flex justify-between items-center">
+                <h1 class="font-bold text-2xl">Best Deal For you</h1>
+                <button id="price-show" class="btn text-white bg-[#0E7A81]">Sort by Price</button>
+            </div>
+            <section class="flex gap-4  ">
+                <div id="" class=" w-[75%]  mx-auto">
+                    <div id="paddy-container" class="grid grid-cols-1 md:grid-cols-3 gap-3">
+
+                    </div>
+
+                </div>
+                <div class="w-[25%]  gap-3 mt-5">
+                    <div id="right-container" class="grid grid-cols-1 md:grid-cols-2 gap-2 ">
+                      
+
+                    </div>
+
+                </div>
+            </section>
+          </section>
+          <!-- try -->
+          <dialog id="video_deatils" class="modal">
+            <div class="modal-box">
+             <div id="deatils-container">
+          
+             </div>
+              <div class="modal-action ">
+                <form method="dialog ">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="   btn bg-[#0E7A81] text-white">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+         
+           <!--  -->
+    </main>
+    <script src="js/app.js"></script>
+    <script>
+      
+    </script>
+</body>
+</html>
